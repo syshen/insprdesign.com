@@ -1,13 +1,13 @@
 $(function(){
-	$('.play-video').on('click',function(){
+	$('.play-video-mask').on('click',function(){
 		$(this).hide();
 		$('.demo-video')[0].play();
 	})
 	$('.demo-video').on('click',function(){
 		this.pause();
-		$('.play-video').show();
+		$('.play-video-mask').show();
 	})
 	$('.demo-video').on('ended',function(){
-		$('.play-video').show();
+		$('.play-video-mask').show();
 	})
 });
