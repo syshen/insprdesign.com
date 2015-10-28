@@ -33,4 +33,19 @@ $(function(){
 			$('.mask').hide();	
 		}
 	}
+
+	if ($(window).width() < 768){
+		mockup_block_padding = 6;
+		mockup_width = 200;
+		mockup_width_p = mockup_width+mockup_block_padding*2
+		total_mockups = 7;
+		maxpoint = total_mockups - Math.floor(($(window).width() - ($(window).width()-mockup_width_p)/2 ) / mockup_width_p )
+		console.log(maxpoint)
+		$('.mockups-list').css('left', ($(window).width()-mockup_width_p)/2)
+		flipsnap = Flipsnap('.mockups-list', {
+	    distance: mockup_width + mockup_block_padding*2, 
+	    maxPoint: maxpoint
+		});
+		flipsnap.moveToPoint(1);
+	}
 });
