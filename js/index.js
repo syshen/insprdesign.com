@@ -1,4 +1,13 @@
 $(function(){
+	isHandHeld=false;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('body').addClass('handheld');
+		isHandHeld=true;
+	}else{
+		$('body').addClass('desktop');
+	}
+
+
 	$('.play-video-mask').on('click',function(){
 		$(this).hide();
 		$('.demo-video')[0].play();
@@ -34,7 +43,8 @@ $(function(){
 		}
 	}
 
-	if ($(window).width() < 768){
+	handheld_width = 960
+	if ($(window).width() < handheld_width){
 		mockup_block_padding = 6;
 		mockup_width = 200;
 		mockup_width_p = mockup_width+mockup_block_padding*2
