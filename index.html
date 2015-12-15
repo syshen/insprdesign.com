@@ -5,16 +5,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
     <meta name="description" content='Inspr (pronounced as “ins-per”) is a mobile app for everyone to design an app interface directly on your mobile phone. For you to start an app design effortlessly, Inspr offers a set of templates and rich presets that will help you form your ideas quickly.'/>
     <meta property="og:site_name" content="Inspr" />
-    <meta property="og:title" content="Inspr - the easiest way to craft an app design on your phone" />
+    <meta property="og:title" content="Inspr - easiest way to craft an app design on your phone" />
     <meta property="og:description" content='Inspr (pronounced as “ins-per”) is a mobile app for everyone to design an app interface directly on your mobile phone. For you to start an app design effortlessly, Inspr offers a set of templates and rich presets that will help you form your ideas quickly.' />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://insprdesign.com" />
-    <meta property="og:image" content="http://insprdesign.com.s3-us-west-1.amazonaws.com/hero1.jpg" />
+    <meta property="og:image" content="http://insprdesign.com/images/hero1.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:video" content="http://insprdesign.com/video/inspr_demo.mp4" />
-    <title>Inspr - the easiest way to craft an app design on your phone</title>
+    <title>Inspr - easiest way to craft an app design on your phone</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" href="path/to/touchicon.png">
+    <link rel="icon" href="path/to/favicon.png">
+    <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,6 +25,9 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-66655230-2', 'auto');
       ga('send', 'pageview');
+      function gaEvent(category,action,label){
+        ga('send', 'event', category, action, label);
+      }
     </script>
     <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','//connect.facebook.net/en_US/fbevents.js');
@@ -29,29 +35,66 @@
       fbq('init', '1635130550075755');
       fbq('track', "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1635130550075755&ev=PageView&noscript=1"/></noscript>
+    <script>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
   </head>
   <body>
-  	<header></header>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=500670736767893";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
   	<section class="hero">
-  			<div class="iphone sprite-iphone">
-          <video class="demo-video">
-            <source src="video/inspr_demo.webm" type="video/webm">
-            <source src="video/inspr_demo.mp4" type="video/mp4">
-            <source src="video/inspr_demo.ogg" type="video/ogg">
-            <img src="video/inspr_demo.png" alt="">
-          </video>
-  				<div class="play-video-mask"><div class="play-video"></div></div>
-  			</div>
-  			<div class="hero-description">
-  				<a href="https://itunes.apple.com/app/id1037924566"><span class="app-icon sprite-app-icon"></span></a>
-  				<h1>Inspr</h1>
-  				<h2>Easiest way to craft an app design on your phone</h2>
-          <a class="play-video-wrapper__m"><span class="play-video__m"></span><br>watch demo</a>
+      <header>
+        <div class="header-wrapper">
+          <a href="#" class="inspr-logo nav-link"><span class="inspr-logo-icon"></span>Inspr</a>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="https://dl.dropboxusercontent.com/u/35214521/Inspr_Press_Kit.zip" class="nav-link" onClick="gaEvent('actions','get_presskit','')">Press Kit</a></li>
+            <li class="nav-item"><a href="mailto:contact@insprdesign.com" class="nav-link" onClick="gaEvent('actions','email','email_nav')">Contact</a></li>
+            <li class="nav-item"><a href="https://www.facebook.com/insprdesign/" target="_blank" class="nav-link" class="nav-link" onClick="gaEvent('actions','link_sn','fb_nav')"><span class="nav-icon nav-icon__fb"></span></a></li>
+            <li class="nav-item"><a href="https://twitter.com/InsprDesign" target="_blank" class="nav-link" onClick="gaEvent('actions','link_sn','fb_twitter')"><span class="nav-icon nav-icon__twitter"></span></a></li>
+          </ul>
+        </div>
+      </header>
+			<div class="iphone sprite-iphone">
+        <video class="demo-video">
+          <source src="video/inspr_demo.webm" type="video/webm">
+          <source src="video/inspr_demo.mp4" type="video/mp4">
+          <source src="video/inspr_demo.ogg" type="video/ogg">
+          <img src="video/inspr_demo.png" alt="">
+        </video>
+				<div class="play-video-mask"><div class="play-video"></div></div>
+			</div>
+			<div class="hero-description">
+				<a href="https://itunes.apple.com/app/id1037924566" onClick="gaEvent('actions','download_inspr','app_icon')"><span class="app-icon sprite-app-icon"></span></a>
+				<h1>Inspr</h1>
+				<h2>Easiest way to craft an app design on your phone</h2>
+        <a class="play-video-wrapper__m" onClick="gaEvent('actions','play_video','')"><span class="play-video__m"></span><br>watch demo</a>
+        <a href="https://itunes.apple.com/app/id1037924566" onClick="gaEvent('actions','download_inspr','top')"><span class="download-badge sprite-download-badge"></span></a>
+        <div class="sn-btns">
+          <div class="fb-like" data-href="http://insprdesign.com" data-width="100" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false" style="vertical-align: top;"></div>
+          <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=@InsprDesign%20Easiest%20way%20to%20craft%20an%20app%20design%20on%20your%20phone">Tweet</a>
 
-          <a href="https://itunes.apple.com/app/id1037924566"><span class="download-badge sprite-download-badge"></span></a>
-          
-  			</div>
+        </div>
+			</div>
   	</section>
   	<section class="feature feature__components">
   		<div class="feature-text">
@@ -114,10 +157,10 @@
 
   	<footer class="footer">
     	<h3 class="footer-title">Turn your idea into a mockup now</h3>
-    	<a href="https://itunes.apple.com/app/id1037924566"><span class="download-badge sprite-download-badge"></span></a>
+    	<a href="https://itunes.apple.com/app/id1037924566" onClick="gaEvent('actions','download_inspr','btm')"><span class="download-badge sprite-download-badge"></span></a>
     	<hr>
-      <p class="contact"><a href="mailto:contact@insprdesign.com">Email us</a></p>
-    	<p class="copyright">Made by <a href="https://twitter.com/syshen" target="_blank">@syshen</a>, <a href="https://twitter.com/minghsun_li" target="_blank">@minghsun_li</a>, <a href="https://twitter.com/bettyfang" target="_blank">@betty</a></p>
+      <p class="contact"><a href="mailto:contact@insprdesign.com" onClick="gaEvent('actions','email','email_footer')">Email us</a></p>
+    	<p class="copyright">Made by <a href="https://twitter.com/syshen" target="_blank" onClick="gaEvent('links','link_sn','syshen')">@syshen</a>, <a href="https://twitter.com/minghsun_li" target="_blank" onClick="gaEvent('links','link_sn','minghsun')">@minghsun_li</a>, <a href="https://twitter.com/bettyfang" target="_blank" onClick="gaEvent('links','link_sn','betty')">@betty</a></p>
   	</footer>
 
     <div class="mask">
