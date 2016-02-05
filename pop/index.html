@@ -86,11 +86,7 @@
         </div>
 				<h1>Design apps <span style="display:inline-block;">on the phone</span></h1>
         <h2>From mockup to prototype, easy and for everyone.</h2>
-        <div id="video-wrapper">
-          <div id="video-placeholder"></div>
-        </div>
-
-        <a href="#" class="cta" id="watch-video" onClick="gaEvent('actions','play_video','')">Watch Video</a><a class="cta link" href="https://itunes.apple.com/app/id1011122014" onClick="gaEvent('actions','download_inspr','demo');fbq('track', 'Lead');">Download Now!</a> 
+        <a class="cta link" href="https://itunes.apple.com/app/id1011122014" onClick="gaEvent('actions','download_inspr','demo');fbq('track', 'Lead');">Download Now!</a> 
 
         <div class="sn-btns">
           <div class="fb-like" data-href="http://insprdesign.com/pop" data-width="100" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false" style="vertical-align: top;"></div>
@@ -99,8 +95,14 @@
 			</div>
   	</section>
 
+    <section  style="margin-bottom: 80px;">
+      <h3 class="feature-title">How it works</h3>
+      <div id="video-wrapper">
+        <div id="video-placeholder"></div>
+      </div>
+    </section>
   	<section class="feature">
-    		<h3 class="feature-title">How it works</h3>
+    		<h3 class="feature-title">Just a few steps</h3>
         <ul class="steps">
           <li class="step">
             1. Craft your app screens on Inspr 
@@ -143,8 +145,23 @@
     	<p class="copyright">Made by <a href="https://twitter.com/syshen" target="_blank" onClick="gaEvent('links','link_sn','syshen')">@syshen</a>, <a href="https://twitter.com/minghsun_li" target="_blank" onClick="gaEvent('links','link_sn','minghsun')">@minghsun_li</a>, <a href="https://twitter.com/bettyfang" target="_blank" onClick="gaEvent('links','link_sn','betty')">@betty</a></p>
   	</footer>
 
-    <script src="../js/jquery-2.1.4.min.js"></script>
-    <script src="../js/pop-integrate.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      var player, vid_width = 720, vid_height = 405, vid_ratio = vid_width/vid_height;
+
+      if(window.innerWidth < 767){
+        vid_width = window.innerWidth * 0.8
+        vid_height = vid_width / vid_ratio
+        document.getElementById('video-placeholder').style.marginLeft = "-"+vid_width/2+"px"
+      }
+
+      function onYouTubeIframeAPIReady() {
+          player = new YT.Player('video-placeholder', {
+              width: vid_width,
+              height: vid_height,
+              videoId: '3hPePH2vDz0'
+          });
+      }
+    </script>
   </body>
 </html>
