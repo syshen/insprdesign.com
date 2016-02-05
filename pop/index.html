@@ -85,10 +85,13 @@
           <a href="https://itunes.apple.com/app/id555647796" onClick="gaEvent('actions','download_pop','app_icon');fbq('track', 'Lead');"><span class="app-icon app-icon__pop sprite-app-icon-pop"></span></a>
         </div>
 				<h1>Design apps <span style="display:inline-block;">on the phone</span></h1>
-        <h2>From mockup to prototype, easy and for everyone. <br>New release on February 1.</h2>
+        <h2>From mockup to prototype, easy and for everyone.</h2>
+        <div id="video-wrapper">
+          <div id="video-placeholder"></div>
+        </div>
 
-        <a class="typeform-share link" href="https://itunes.apple.com/app/id1011122014" onClick="gaEvent('actions','download_inspr','demo');fbq('track', 'Lead');">Download Now!</a>
-        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+        <a href="#" class="cta" id="watch-video" onClick="gaEvent('actions','play_video','')">Watch Video</a><a class="cta link" href="https://itunes.apple.com/app/id1011122014" onClick="gaEvent('actions','download_inspr','demo');fbq('track', 'Lead');">Download Now!</a> 
+
         <div class="sn-btns">
           <div class="fb-like" data-href="http://insprdesign.com/pop" data-width="100" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false" style="vertical-align: top;"></div>
           <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=@InsprDesign%20make%20your%20app%20ideas%20come%20alive%20right%20from%20your%20phone">Tweet</a>
@@ -132,15 +135,16 @@
 
   	</section>
 
-
+    
   	<footer class="footer">
-    	<p class="footer-description">New release on February 1!<br><a class="typeform-share link text" href="https://fatlampard.typeform.com/to/a2PMXP" data-mode="1" onClick="gaEvent('actions','subscribe','btm_text'); fbq('track', 'Lead');">Subscribe</a> to get the latest news</p>
-      <a class="typeform-share link footerbtn" href="https://itunes.apple.com/app/id1011122014" onClick="gaEvent('actions','download_inspr','btm_btn'); fbq('track', 'Lead');">Download Now!</a>
+      <a class="cta link footerbtn" href="https://itunes.apple.com/app/id1011122014" onClick="gaEvent('actions','download_inspr','btm_btn');fbq('track', 'Lead');">Download Now!</a>
     	<hr>
       <p class="contact"><a href="mailto:contact@insprdesign.com" onClick="gaEvent('actions','email','email_footer')">Email us</a></p>
     	<p class="copyright">Made by <a href="https://twitter.com/syshen" target="_blank" onClick="gaEvent('links','link_sn','syshen')">@syshen</a>, <a href="https://twitter.com/minghsun_li" target="_blank" onClick="gaEvent('links','link_sn','minghsun')">@minghsun_li</a>, <a href="https://twitter.com/bettyfang" target="_blank" onClick="gaEvent('links','link_sn','betty')">@betty</a></p>
   	</footer>
 
-
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/pop.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
   </body>
 </html>
