@@ -39,7 +39,7 @@ $(function(){
 
 	window.onhashchange = function() {
 		if(location.hash.indexOf("videoplaying")==-1 && $('.mask').css('display')!='none'){
-			$('.mask').hide();	
+			$('.mask').hide();
 		}
 	}
 
@@ -53,9 +53,30 @@ $(function(){
 		console.log(maxpoint)
 		$('.mockups-list').css('left', ($(window).width()-mockup_width_p)/2)
 		flipsnap = Flipsnap('.mockups-list', {
-	    distance: mockup_width + mockup_block_padding*2, 
+	    distance: mockup_width + mockup_block_padding*2,
 	    maxPoint: maxpoint
 		});
 		flipsnap.moveToPoint(1);
 	}
+
+	function getURLParameters(sParam) {
+		var sPageURL = window.location.search.substring(1);
+		var sURLVariables = sPageURL.split('&');
+		for (var i = 0; i < sURLVariables.length; i++) {
+			var sParameterName = sURLVariables[i].split('=');
+			if (sParameterName[0] == sParam) {
+				return sParameterName[1];
+			}
+		}
+	}
+
+	// App Store Campaign link generator
+	var ct = getURLParameters('ct');
+	var pt = getURLParameters('pt');
+	var appStoreURL = "https://itunes.apple.com/app/apple-store/id1011122014?pt=616448&ct=Landing&mt=8";
+	if (ct && pt) {
+		appStoreURL = "https://itunes.apple.com/app/apple-store/id1011122014?pt=" + pt + "&ct=" + ct + "&mt=8";
+	}
+	$( "a.store-link" ).attr("href", appStoreURL);
+
 });
