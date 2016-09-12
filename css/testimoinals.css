@@ -1,0 +1,221 @@
+.testimonials {
+  position: relative;
+  margin: auto;
+  padding: 70px 0;
+  text-align: center; }
+  @media (max-width: 500px) {
+    .testimonials {
+      padding: 50px 0; } }
+
+.testimonials__description {
+  font-weight: 300;
+  display: inline-block;
+  max-width: 500px;
+  margin-bottom: 100px;
+  color: #747474;
+  font-size: 16px; }
+  .wf-montserrat-n3-active .testimonials__description {
+    font-family: Montserrat, Helvetica, Arial, sans-serif; }
+  @media (max-width: 500px) {
+    .testimonials__description {
+      margin-bottom: 50px; } }
+
+.testimonials__arrow {
+  position: absolute; }
+
+.testimonials__item_name {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 10px;
+  color: #242526;
+  text-transform: uppercase;
+  font-style: normal; }
+  .wf-montserrat-n7-active .testimonials__item_name {
+    font-family: Montserrat, Helvetica, Arial, sans-serif; }
+
+.testimonials__item_text {
+  font-weight: 700;
+  position: relative;
+  display: block;
+  max-width: 400px;
+  padding: 30px 20px 0 20px;
+  margin: auto auto 30px;
+  font-size: 24px;
+  color: #242526;
+  font-style: italic;
+  line-height: 1.3;
+  letter-spacing: 0.08em; }
+  .wf-playfairdisplay-i7-active .testimonials__item_text {
+    font-family: Playfair Display, Helvetica, Arial, sans-serif; }
+  .testimonials__item_text:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 16px;
+    height: 11px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjE1Ljk5MDJweCIgaGVpZ2h0PSIxMS4wMDc4cHgiIHZpZXdCb3g9IjAgMCAxNS45OTAyIDExLjAwNzgiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE1Ljk5MDIgMTEuMDA3OCINCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0ibWFya3MiIGZpbGw9IiMxYjhiZjkiIGQ9Ik0zLjUxMDcsNC4wMDI5YzEuOTI5NywwLDMuNDk0MSwxLjU2NzksMy40OTQxLDMuNTAyOWMwLDEuOTMzNi0xLjU2NDUsMy41MDItMy40OTQxLDMuNTAyDQoJYy0xLjkzMDcsMC0zLjQ5NTEtMS41Njg0LTMuNDk1MS0zLjUwMkwwLDcuMDA0OUMwLDMuMTM2MiwzLjEyODksMCw2Ljk4OTMsMHYyLjAwMTVjLTEuMzM0LDAtMi41ODc5LDAuNTIwNS0zLjUzMDMsMS40NjUzDQoJYy0wLjE4MTYsMC4xODIxLTAuMzQ2NywwLjM3Ni0wLjQ5NzEsMC41NzkxQzMuMTQxNiw0LjAxNzYsMy4zMjMyLDQuMDAyOSwzLjUxMDcsNC4wMDI5eiBNMTIuNDk2MSw0LjAwMjkNCgljMS45Mjk3LDAsMy40OTQxLDEuNTY3OSwzLjQ5NDEsMy41MDI5YzAsMS45MzM2LTEuNTY0NSwzLjUwMi0zLjQ5NDEsMy41MDJjLTEuOTMwNywwLTMuNDk1MS0xLjU2ODQtMy40OTUxLTMuNTAybC0wLjAxNTYtMC41MDENCglDOC45ODU0LDMuMTM2MiwxMi4xMTQzLDAsMTUuOTc0NiwwdjIuMDAxNWMtMS4zMzMsMC0yLjU4NjksMC41MjA1LTMuNTMwMywxLjQ2NTNjLTAuMTgxNiwwLjE4MjEtMC4zNDY3LDAuMzc2LTAuNDk2MSwwLjU3OTENCglDMTIuMTI3LDQuMDE3NiwxMi4zMDk2LDQuMDAyOSwxMi40OTYxLDQuMDAyOXoiLz4NCjwvc3ZnPg0K) no-repeat center/100% auto; }
+  @media (max-width: 500px) {
+    .testimonials__item_text {
+      font-size: 18px; } }
+
+.testimonials__item_photo {
+  height: 59px;
+  width: 59px;
+  margin: auto auto 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #747474; }
+
+.testimonials__item_job {
+  font-weight: 700;
+  font-size: 13px;
+  color: #747474;
+  font-style: italic; }
+  .wf-playfairdisplay-i7-active .testimonials__item_job {
+    font-family: Playfair Display, Helvetica, Arial, sans-serif; }
+
+.testimonials__arrows_box {
+  position: absolute;
+  margin: auto;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%; }
+
+.testimonials__arrow {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .4s ease, -webkit-box-shadow .4s ease;
+  -moz-transition: -moz-transform .4s ease, -moz-box-shadow .4s ease;
+  -o-transition: -o-transform .4s ease, box-shadow .4s ease;
+  transition: transform .4s ease, box-shadow .4s ease; }
+  .testimonials__arrow:before, .testimonials__arrow:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease; }
+  .testimonials__arrow:after {
+    opacity: 0; }
+  .testimonials__arrow:hover:before {
+    opacity: 0; }
+  .testimonials__arrow:hover:after {
+    opacity: 1; }
+  .testimonials__arrow--left {
+    left: 15px; }
+    .testimonials__arrow--left:hover {
+      -webkit-transform: translateX(-5px);
+      -moz-transform: translateX(-5px);
+      -ms-transform: translateX(-5px);
+      -o-transform: translateX(-5px);
+      transform: translateX(-5px); }
+  .testimonials__arrow--right {
+    right: 15px; }
+    .testimonials__arrow--right:hover {
+      -webkit-transform: translateX(5px);
+      -moz-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+      -o-transform: translateX(5px);
+      transform: translateX(5px); }
+
+.testimonials__rating_box {
+  display: inline-block;
+  margin-bottom: 30px; }
+
+.testimonials__rating_star {
+  float: left;
+  margin-right: 7px; }
+  .testimonials__rating_star:last-child {
+    margin-right: 0; }
+  .testimonials__rating_star--hidden {
+    opacity: 0.2; }
+
+.testimonials .slick-dots {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  margin-top: 30px; }
+  .testimonials .slick-dots li {
+    display: inline-block;
+    margin: 0 4.5px; }
+    .testimonials .slick-dots li.slick-active button {
+      opacity: 1; }
+  .testimonials .slick-dots button {
+    opacity: 0.3;
+    height: 9px;
+    width: 9px;
+    background-color: #242526;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 0;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease; }
+
+.testimonials--01 {
+  max-width: 808px; }
+
+.testimonials__title--01 {
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 10px;
+  color: #242526;
+  text-transform: uppercase; }
+  .wf-montserrat-n7-active .testimonials__title--01 {
+    font-family: Montserrat, Helvetica, Arial, sans-serif; }
+
+.testimonials__arrows_box--01 {
+  height: 28px; }
+
+.testimonials__arrow--01 {
+  height: 28px;
+  width: 28px;
+  border: 1px solid #b6c1cc;
+  background-color: white; }
+  .testimonials__arrow--01:after, .testimonials__arrow--01:before {
+    height: 8px;
+    width: 4px;
+    margin: auto; }
+  .testimonials__arrow--01:after {
+    opacity: 1; }
+  .testimonials__arrow--01:hover {
+    -webkit-box-shadow: 0.5px 0.9px 17px rgba(255, 255, 255, 0.51);
+    -moz-box-shadow: 0.5px 0.9px 17px rgba(255, 255, 255, 0.51);
+    box-shadow: 0.5px 0.9px 17px rgba(255, 255, 255, 0.51); }
+  .testimonials__arrow--01--left:after {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQuNDE0MXB4IiBoZWlnaHQ9IjcuMDAxcHgiIHZpZXdCb3g9IjAgMCA0LjQxNDEgNy4wMDEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQuNDE0MSA3LjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0iaS0tc21hbGwtYXJyb3ctLWJsYWNrLS1sZWZ0IiBmaWxsPSIjMjQyNTI2IiBkPSJNMC4yNjc2LDIuODUzNUMwLjA4ODksMy4wMzIyLDAsMy4yNjY2LDAsMy41MDENCgljMCwwLjE3NTgsMC4wNTA4LDAuMzUwNiwwLjE1MDQsMC41MDI5YzAuMDMzMiwwLjA0OTgsMC4wNzIzLDAuMDk4NiwwLjExNzIsMC4xNDI2bDIuNTg1OSwyLjU4NTkNCgljMC4zNTc0LDAuMzU3NCwwLjkzNjUsMC4zNTc0LDEuMjkzLDBjMC4zNTc0LTAuMzU2NCwwLjM1NzQtMC45MzU1LDAtMS4yOTNMMi4yMDcsMy41MDFsMS45Mzk1LTEuOTM5NQ0KCWMwLjM1NzQtMC4zNTc0LDAuMzU3NC0wLjkzNzUsMC0xLjI5MzljLTAuMzU2NC0wLjM1NjQtMC45MzU1LTAuMzU2NC0xLjI5MywwTDAuMjY3NiwyLjg1MzV6Ii8+DQo8L3N2Zz4NCg==) no-repeat center/100% auto; }
+  .testimonials__arrow--01--right:after {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzJfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQuNDE0MXB4IiBoZWlnaHQ9IjcuMDAxcHgiIHZpZXdCb3g9IjAgMCA0LjQxNDEgNy4wMDEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQuNDE0MSA3LjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0iaS0tc21hbGwtYXJyb3ctLWJsYWNrLS1yaWdodCIgZmlsbD0iIzI0MjUyNiIgZD0iTTEuNTYwNSwwLjI2NzZjLTAuMzU3NC0wLjM1NjQtMC45MzY1LTAuMzU2NC0xLjI5MywwDQoJYy0wLjM1NzQsMC4zNTY0LTAuMzU3NCwwLjkzNjUsMCwxLjI5MzlMMi4yMDcsMy41MDFMMC4yNjc2LDUuNDM5NWMtMC4zNTc0LDAuMzU3NC0wLjM1NzQsMC45MzY1LDAsMS4yOTMNCgljMC4zNTY0LDAuMzU3NCwwLjkzNTUsMC4zNTc0LDEuMjkzLDBsMi41ODU5LTIuNTg1OWMwLjA0NDktMC4wNDM5LDAuMDg0LTAuMDkyOCwwLjExNzItMC4xNDI2DQoJQzQuMzYzMywzLjg1MTYsNC40MTQxLDMuNjc2OCw0LjQxNDEsMy41MDFjMC0wLjIzNDQtMC4wODg5LTAuNDY4OC0wLjI2NzYtMC42NDc1TDEuNTYwNSwwLjI2NzZ6Ii8+DQo8L3N2Zz4NCg==) no-repeat center/100% auto;
+    -webkit-transform: translateX(1px);
+    -moz-transform: translateX(1px);
+    -ms-transform: translateX(1px);
+    -o-transform: translateX(1px);
+    transform: translateX(1px); }
