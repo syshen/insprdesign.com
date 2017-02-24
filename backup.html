@@ -14,11 +14,30 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:video" content="https://insprdesign.com/video/inspr_demo.mp4" />
-    <title>How to backup and restore</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/testimoinals.css">
-    <link rel="apple-touch-icon" href="/touchicon.png">
-    <link rel="icon" href="/favicon.png">
+    <title>Backup and restore</title>
+    <link rel="apple-touch-icon" href="touchicon.png">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+    .mt-1 {
+      margin-top: 10px;
+    }
+    .mt-2 {
+      margin-top: 20px;
+    }
+    img {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .row {
+      margin-top: 20px;
+    }
+    body {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 30px;
+    }
+    </style>
     <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -68,26 +87,38 @@
     <!-- Google Code for Inspr landing page conversion Conversion Page -->
   </head>
   <body>
-    <h1>How to backup</h1>
-    <div>Inspr now supports iCloud Drive, therefore you can access all your files from the iCloud Drive app or iCloud.com. iCloud is an Apple's technic to synchronize app's files cross devices. If you have a Mac device, it will be easier to access all your files. If not, no need to worry, you still can download your files from iCloud.com</div>
-
-    <h2>For Mac device</h2>
-    <div>If you are using Mac device and login with your Apple account, you can access all your iCloud files on Finder:</div>
-    <img src="images/inspr-icloud.png" width="300"/>
-    <div>All your files are in the "Inspr" folder. And go into the "Inspr" app directory, you will find several project folder. Each project is in seperate folder now. The folder name is also your project name.
+    <div class="container">
+      <div class="row">
+        <h1>How to backup</h1>
+        <hr>
+        <div>Inspr now supports iCloud Drive, therefore you can access all your files from the iCloud Drive app or iCloud.com. iCloud is an Apple's technic to synchronize app's files cross devices. If you have a Mac device, it will be easier to access all your files. If not, no need to worry, you still can download your files from iCloud.com</div>
       </div>
-    </div>
-    <div>If you want to back files, just select the files or folders you want to backup, then compress the files you select, and save the compression to somewhere else. 
-      Or you can also copy the selected folders and files to the place you want to backup.
-    </div>
-    <img src="images/inspr-icloud2.png" width="300"/>
-    <div>To restore files, just simply copy your backup back to Inspr folder in the iCloud Drive. But remember, the design file needs to be under a project folder, or you won't see it in the Inspr app.</div>
+
+      <div class="row">
+        <h2>For Mac devices</h2>
+        <div>If you are using Mac device and have signed in with your Apple Id, you can access all your iCloud files on Finder:</div>
+        <div><img src="images/inspr-icloud.png" class="img-responsive"/></div>
+        <div><small><em>If you don't see iCloud Drive, make sure you have <a href="https://support.apple.com/en-us/HT204025">turned on the iCloud Drive feature.</a></em></small></div>
+        <div class="mt-1">All your files are in the "Inspr" folder. When you go into the "Inspr" app folder, you will find several sub folders. They also represent the projects you created in Inspr. The folder name is the name of a project.
+        </div>
+      </div>
+
+      <div class="row">
+        <div>If you want to back files, just select the files or folders you want to backup, then compress and save the compression to somewhere else like Dropbox or hardrive of your Mac. 
+        </div>
+        <img src="images/inspr-icloud2.png" class="img-responsive"/>
+        <div>To restore files, just simply copy your backup (must be the files with inspr file extension) under any sub folder of Inspr on iCloud Drive. 
+          And since each sub folder also represents a project in the app, you must place the backup under one of sub folders. Nested sub folder is not allowed. </div>
+      </div>
     
-    <h3>For PC or Windows</h3>
-    <div>If you are using Windows or other PC platforms, to you can access files from iCloud.com , or download iCloud Drive client from Apple's <a href="https://support.apple.com/en-us/HT204283">website</a>. </div>
-    <div>If you choose to login iCloud.com, you can login with your apple ID and password. Once you login, you should see the iCloud Drive icon. If not, please check this <a href="https://support.apple.com/kb/PH21250?locale=en_US&viewlocale=en_US">website</a> for the troubleshooting.</div>
-    <img src="images/icloud.png" width="300"/>
-    <div>Goes into iCloud Drive, and you will find Inspr folder. If not, please check this <a href="https://support.apple.com/kb/PH21250?locale=en_US&viewlocale=en_US">website</a> for trouble shooting.</div>
-    <div>In iCloud.com, you can download to backup locally. Or upload your backup to restore it (place it under any project folder).</div>
+      <div class="row">
+       <h3>For PC or Windows</h3>
+        <div>If you are using Windows or other PC platforms, there are two approaches to access your files. 
+          One is to login Apple's website iCloud.com. Another way is to download iCloud Drive client from Apple's <a href="https://support.apple.com/en-us/HT204283">website</a>. </div>
+        <div class="mt-1">If you choose to use iCloud.com, you can login with your Apple ID and password. Once you login, tap into the iCloud Drive service. If you don't see it, please check this <a href="https://support.apple.com/kb/PH21250?locale=en_US&viewlocale=en_US">website</a> for the troubleshooting.</div>
+        <img src="images/icloud.png" class="img-responsive"/>
+        <div>When you go into iCloud Drive, and you will find Inspr folder. If not, please check this <a href="https://support.apple.com/kb/PH21250?locale=en_US&viewlocale=en_US">website</a> for trouble shooting.</div>
+        <div>In iCloud.com, you can download to backup locally. Or upload your backup to restore it (place it under any project folder).</div>
+      </div>
   </body>
 </html>
